@@ -1,0 +1,26 @@
+﻿/*nav ul li {
+    background-color: #FFC93C;
+    color: black;
+    font-size: 100px;
+    margin: 5px;
+    padding: 10px;
+    display: inline;
+    border-radius: 3px;
+
+}*/
+
+/*li:hover {
+    background-color: #d1a431;
+}*/
+
+.btn:hover{
+    background-color:white;
+}
+
+ul li a{
+    font-size:100px;
+}
+
+*{
+    background-color:pink;
+}

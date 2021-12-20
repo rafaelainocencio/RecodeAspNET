@@ -1,0 +1,81 @@
+﻿* {
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    color: unset;
+}
+
+
+    nav ul li {
+        background-color: #FFC93C;
+        color: black;
+        font-size: 20px;
+        margin: 5px;
+        padding: 10px;
+        display: inline;
+        border-radius: 3px;
+    }
+
+li:hover {
+    background-color: #d1a431;
+}
+
+.maior {
+    background-color: #31326F;
+    border-radius:10px;
+}
+
+#titDestino {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+}
+
+
+.caixinha {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 30px;
+}
+
+    .caixinha img {
+        max-height: 270px;
+    }
+
+.preco {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#preco, #precoProm {
+    text-align:center;
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 20px;
+    margin:5px;
+}
+
+#precoProm{
+    color:red;
+    text-decoration:line-through;
+}
+
+#btnComprar {
+    padding:10px;
+    font-size:20px;
+}
+
+.descricao {
+    padding: 20px;
+}
+
+#titDescricao {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+

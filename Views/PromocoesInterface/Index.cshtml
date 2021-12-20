@@ -1,0 +1,52 @@
+﻿@model IEnumerable<RecodeAir.Models.Destino>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<link rel="stylesheet" href="~/css/destino.css" />
+
+
+<main>
+    <h1 id="titDestino">Os melhores destinos para sua viagem!</h1>
+
+
+
+
+    <div class="container maior p-5" id="caixona">
+        @{
+            foreach (var item in Model)
+            {
+                if (DateTime.Now.DayOfWeek.ToString() == "Saturday" || DateTime.Now.DayOfWeek.ToString() == "Sunday")
+                {
+                    <div>
+                        <h2>Desculpe, não temos promoções hoje, volte amanhã!</h2>
+                    </div>
+                    
+                }
+
+                else if (item.IdDestino % 2 != 0)
+                {<div class="container bg-light caixinha p-5 row">
+                    <div class="col">
+                        <img src="~/lib/Imagens/@item.Imagem" />
+                    </div>
+                    <div class="col">
+                        <h2>@item.NomeDestino</h2>
+                        <p>@item.Descricao</p>
+                    </div>
+                    <div class="col preco">
+                        <div>
+                            de: <p id="precoProm">@item.Preco</p> por:
+                            <p id="preco">  @(Math.Round(item.Preco - (item.Preco * (decimal)0.35), 2))</p>
+                            <button class="m-5" id="btnComprar">Comprar</button>
+                        </div>
+                        
+
+                    </div>
+                </div>
+                    }
+                }
+            }
+    </div>
+</main>
+

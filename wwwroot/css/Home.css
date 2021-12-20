@@ -1,0 +1,65 @@
+﻿* {
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    color: unset;
+}
+
+
+header {
+    padding-top: 20px;
+    background-repeat: no-repeat;
+    background-image: url("/Imagens/Header-Praia.jpg");
+    height: 741px;
+    grid-area: h;
+}
+
+main {
+    justify-content: center;
+    grid-area: m;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer {
+    justify-content: center;
+    display: flex;
+    grid-area: f;
+}
+
+
+nav {
+    text-align: center;
+}
+
+
+
+    nav ul li {
+        background-color: #FFC93C;
+        color: black;
+        font-size: 20px;
+        margin: 5px;
+        padding: 10px;
+        display: inline;
+        border-radius: 3px;
+    }
+
+/*li:hover {
+    background-color: #d1a431;
+}*/
+
+.caixinha {
+    text-align: center;
+    padding: 70px;
+    margin: 20px;
+    background-color: #FFC93C;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.titCaixinha {
+    margin-bottom: 30px;
+}
